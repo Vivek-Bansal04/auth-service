@@ -1,0 +1,841 @@
+2024-08-01 16:53:25.808  INFO 400200 --- [restartedMain] c.o.auth.security.SecurityApplication    : Starting SecurityApplication on L108587 with PID 400200 (C:\Users\830466\Desktop\security\build\classes\java\main started by 830466 in C:\Users\830466\Desktop\security)
+2024-08-01 16:53:25.819  INFO 400200 --- [restartedMain] c.o.auth.security.SecurityApplication    : The following profiles are active: local
+2024-08-01 16:53:25.882  INFO 400200 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-01 16:53:25.883  INFO 400200 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-01 16:53:27.968  INFO 400200 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2024-08-01 16:53:28.239  INFO 400200 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 258ms. Found 5 JPA repository interfaces.
+2024-08-01 16:53:28.639  INFO 400200 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ccaf2d38-65f0-3b2c-9ac9-84a13f869dc9
+2024-08-01 16:53:29.899  INFO 400200 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-08-01 16:53:29.917  INFO 400200 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-01 16:53:29.917  INFO 400200 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2024-08-01 16:53:30.134  INFO 400200 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-01 16:53:30.135  INFO 400200 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4252 ms
+2024-08-01 16:53:30.678  INFO 400200 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2024-08-01 16:53:30.762  INFO 400200 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-01 16:53:30.817  WARN 400200 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-01 16:53:30.895  INFO 400200 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2024-08-01 16:53:31.293  INFO 400200 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2024-08-01 16:53:31.574  INFO 400200 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-01 16:53:32.150  INFO 400200 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-01 16:53:32.155  WARN 400200 --- [task-1] PoolOnTimeoutConnectionAcquiringStrategy : Connection was acquired in 582 millis, timeoutMillis is set to 500
+2024-08-01 16:53:32.156  INFO 400200 --- [task-1] PoolOnTimeoutConnectionAcquiringStrategy : Pool size changed by other thread, expected -1 and actual value 10
+2024-08-01 16:53:32.158  INFO 400200 --- [task-1] c.v.flexypool.FlexyPoolDataSource        : Connection acquired in 584 millis, while threshold is set to -1 in dataSource FlexyPoolDataSource
+2024-08-01 16:53:32.223  INFO 400200 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2024-08-01 16:53:32.301  INFO 400200 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2024-08-01 16:53:32.599  INFO 400200 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 463421dc-dc40-4fde-abd7-3af97a266507
+
+2024-08-01 16:53:32.992  INFO 400200 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d9f389f, org.springframework.security.web.context.SecurityContextPersistenceFilter@71e79f3f, org.springframework.security.web.header.HeaderWriterFilter@7cb0f44, org.springframework.web.filter.CorsFilter@13d01180, org.springframework.security.web.authentication.logout.LogoutFilter@60660c52, com.okta.auth.security.JwtAuthenticationFilter@6399f3f7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5ffe6585, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@825077, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@27c637cd, org.springframework.security.web.session.SessionManagementFilter@206fa721, org.springframework.security.web.access.ExceptionTranslationFilter@64000876, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@59ff4eee]
+2024-08-01 16:53:33.103  INFO 400200 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-01 16:53:33.532  INFO 400200 --- [task-1] c.v.flexypool.FlexyPoolDataSource        : Connection leased for 1375 millis, while threshold is set to 0 in dataSource FlexyPoolDataSource
+2024-08-01 16:53:34.704  INFO 400200 --- [task-1] c.v.flexypool.FlexyPoolDataSource        : Connection acquired in 0 millis, while threshold is set to -1 in dataSource FlexyPoolDataSource
+2024-08-01 16:53:35.452  INFO 400200 --- [task-1] c.v.flexypool.FlexyPoolDataSource        : Connection leased for 748 millis, while threshold is set to 0 in dataSource FlexyPoolDataSource
+2024-08-01 16:53:35.453  INFO 400200 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-08-01 16:53:35.461  INFO 400200 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-01 16:53:36.055  INFO 400200 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2024-08-01 16:53:36.141  WARN 400200 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'compositeCompatibilityVerifier' defined in class path resource [org/springframework/cloud/configuration/CompatibilityVerifierAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.configuration.CompositeCompatibilityVerifier]: Factory method 'compositeCompatibilityVerifier' threw exception; nested exception is org.springframework.cloud.configuration.CompatibilityNotMetException
+2024-08-01 16:53:36.144  WARN 400200 --- [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'tomcatMetricsBinder': java.lang.NullPointerException
+2024-08-01 16:53:36.151  INFO 400200 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-01 16:53:36.155  INFO 400200 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-08-01 16:53:36.161  INFO 400200 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-01 16:53:36.188  INFO 400200 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-01 16:53:36.195  INFO 400200 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-08-01 16:53:36.243  INFO 400200 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-08-01 16:53:36.249 ERROR 400200 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Your project setup is incompatible with our requirements due to following reasons:
+
+- Spring Boot [2.3.1.RELEASE] is not compatible with this Spring Cloud release train
+
+
+Action:
+
+Consider applying the following actions:
+
+- Change Spring Boot version to one of the following versions [2.4.x, 2.5.x] .
+You can find the latest Spring Boot versions here [https://spring.io/projects/spring-boot#learn]. 
+If you want to learn more about the Spring Cloud Release train compatibility, you can visit this page [https://spring.io/projects/spring-cloud#overview] and check the [Release Trains] section.
+If you want to disable this check, just set the property [spring.cloud.compatibility-verifier.enabled=false]
+
+
+2024-08-01 16:56:31.259  INFO 388212 --- [restartedMain] c.o.auth.security.SecurityApplication    : Starting SecurityApplication using Java 11.0.16.1 on L108587 with PID 388212 (C:\Users\830466\Desktop\security\build\classes\java\main started by 830466 in C:\Users\830466\Desktop\security)
+2024-08-01 16:56:31.261  INFO 388212 --- [restartedMain] c.o.auth.security.SecurityApplication    : The following profiles are active: local
+2024-08-01 16:56:31.348  INFO 388212 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-01 16:56:31.348  INFO 388212 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-01 16:56:33.317  INFO 388212 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-01 16:56:33.788  INFO 388212 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 436 ms. Found 5 JPA repository interfaces.
+2024-08-01 16:56:34.472  INFO 388212 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=638bb448-e736-3d1d-9cf3-bad776307a54
+2024-08-01 16:56:35.862  INFO 388212 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-08-01 16:56:35.882  INFO 388212 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-01 16:56:35.882  INFO 388212 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2024-08-01 16:56:36.102  INFO 388212 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-01 16:56:36.103  INFO 388212 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4754 ms
+2024-08-01 16:56:36.824  INFO 388212 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-01 16:56:36.949  INFO 388212 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2024-08-01 16:56:37.193  INFO 388212 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-08-01 16:56:37.361  INFO 388212 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-01 16:56:37.755  INFO 388212 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-01 16:56:37.760  INFO 388212 --- [restartedMain] c.v.flexypool.FlexyPoolDataSource        : Connection acquired in 399 millis, while threshold is set to -1 in dataSource FlexyPoolDataSource
+2024-08-01 16:56:37.791  INFO 388212 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2024-08-01 16:56:37.939  INFO 388212 --- [restartedMain] c.v.flexypool.FlexyPoolDataSource        : Connection leased for 179 millis, while threshold is set to 0 in dataSource FlexyPoolDataSource
+2024-08-01 16:56:38.931  INFO 388212 --- [restartedMain] c.v.flexypool.FlexyPoolDataSource        : Connection acquired in 0 millis, while threshold is set to -1 in dataSource FlexyPoolDataSource
+2024-08-01 16:56:39.005  INFO 388212 --- [restartedMain] c.v.flexypool.FlexyPoolDataSource        : Connection leased for 74 millis, while threshold is set to 0 in dataSource FlexyPoolDataSource
+2024-08-01 16:56:39.006  INFO 388212 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-08-01 16:56:39.016  INFO 388212 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-01 16:56:39.048  INFO 388212 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-01 16:56:39.228  WARN 388212 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-01 16:56:41.138  INFO 388212 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2024-08-01 16:56:41.302  INFO 388212 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 0a0b339c-e072-46b3-8030-2c3e20e6c17e
+
+2024-08-01 16:56:41.521  INFO 388212 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@659e30f7, org.springframework.security.web.context.SecurityContextPersistenceFilter@d56ecbe, org.springframework.security.web.header.HeaderWriterFilter@16c0dfad, org.springframework.web.filter.CorsFilter@6c0bfc6e, org.springframework.security.web.authentication.logout.LogoutFilter@4382a18d, com.okta.auth.security.JwtAuthenticationFilter@1040103d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3084978c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2a64eb59, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@714a679b, org.springframework.security.web.session.SessionManagementFilter@7877ab97, org.springframework.security.web.access.ExceptionTranslationFilter@cce3407, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4a3e062e]
+2024-08-01 16:56:43.030  INFO 388212 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2024-08-01 16:56:43.160  WARN 388212 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-08-01 16:56:43.255  INFO 388212 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-08-01 16:56:43.462  INFO 388212 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-08-01 16:56:43.657  INFO 388212 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2024-08-01 16:56:43.657  INFO 388212 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2024-08-01 16:56:43.975  INFO 388212 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2024-08-01 16:56:43.975  INFO 388212 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2024-08-01 16:56:44.252  INFO 388212 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-01 16:56:44.295  INFO 388212 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 16:56:44.295  INFO 388212 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 16:56:44.295  INFO 388212 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 16:56:44.296  INFO 388212 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 16:56:44.296  INFO 388212 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 16:56:44.296  INFO 388212 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-08-01 16:56:44.296  INFO 388212 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 16:56:46.051  INFO 388212 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 16:56:46.053  INFO 388212 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Not registering with Eureka server per configuration
+2024-08-01 16:56:46.062  INFO 388212 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1722511606056 with initial instances count: 0
+2024-08-01 16:56:46.064  INFO 388212 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application AUTH-SERVICE with eureka with status UP
+2024-08-01 16:56:46.081  WARN 388212 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8081 is already in use
+2024-08-01 16:56:46.096  INFO 388212 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-01 16:56:46.103  INFO 388212 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-01 16:56:46.124  INFO 388212 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-01 16:56:46.127  INFO 388212 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-08-01 16:56:46.155  INFO 388212 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-08-01 16:56:46.161  INFO 388212 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-08-01 16:56:46.196  INFO 388212 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-08-01 16:56:46.233 ERROR 388212 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+2024-08-01 16:58:12.584  INFO 400436 --- [restartedMain] c.o.auth.security.SecurityApplication    : Starting SecurityApplication using Java 11.0.16.1 on L108587 with PID 400436 (C:\Users\830466\Desktop\security\build\classes\java\main started by 830466 in C:\Users\830466\Desktop\security)
+2024-08-01 16:58:12.587  INFO 400436 --- [restartedMain] c.o.auth.security.SecurityApplication    : The following profiles are active: local
+2024-08-01 16:58:12.714  INFO 400436 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-01 16:58:12.714  INFO 400436 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-01 16:58:15.399  INFO 400436 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-01 16:58:15.835  INFO 400436 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 416 ms. Found 5 JPA repository interfaces.
+2024-08-01 16:58:16.390  INFO 400436 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=638bb448-e736-3d1d-9cf3-bad776307a54
+2024-08-01 16:58:18.434  INFO 400436 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2024-08-01 16:58:18.459  INFO 400436 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-01 16:58:18.460  INFO 400436 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2024-08-01 16:58:18.815  INFO 400436 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-01 16:58:18.815  INFO 400436 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6100 ms
+2024-08-01 16:58:19.766  INFO 400436 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-01 16:58:19.922  INFO 400436 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2024-08-01 16:58:20.198  INFO 400436 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-08-01 16:58:20.360  INFO 400436 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-01 16:58:20.888  INFO 400436 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-01 16:58:20.897  WARN 400436 --- [restartedMain] PoolOnTimeoutConnectionAcquiringStrategy : Connection was acquired in 537 millis, timeoutMillis is set to 500
+2024-08-01 16:58:20.898  INFO 400436 --- [restartedMain] PoolOnTimeoutConnectionAcquiringStrategy : Pool size changed by other thread, expected -1 and actual value 10
+2024-08-01 16:58:20.901  INFO 400436 --- [restartedMain] c.v.flexypool.FlexyPoolDataSource        : Connection acquired in 541 millis, while threshold is set to -1 in dataSource FlexyPoolDataSource
+2024-08-01 16:58:21.027  INFO 400436 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2024-08-01 16:58:21.275  INFO 400436 --- [restartedMain] c.v.flexypool.FlexyPoolDataSource        : Connection leased for 374 millis, while threshold is set to 0 in dataSource FlexyPoolDataSource
+2024-08-01 16:58:22.966  INFO 400436 --- [restartedMain] c.v.flexypool.FlexyPoolDataSource        : Connection acquired in 0 millis, while threshold is set to -1 in dataSource FlexyPoolDataSource
+2024-08-01 16:58:23.047  INFO 400436 --- [restartedMain] c.v.flexypool.FlexyPoolDataSource        : Connection leased for 80 millis, while threshold is set to 0 in dataSource FlexyPoolDataSource
+2024-08-01 16:58:23.048  INFO 400436 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-08-01 16:58:23.066  INFO 400436 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-01 16:58:23.107  INFO 400436 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-01 16:58:23.297  WARN 400436 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-01 16:58:25.793  INFO 400436 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2024-08-01 16:58:26.061  INFO 400436 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a02dba04-cab2-481a-9f40-95ac761dd33b
+
+2024-08-01 16:58:26.389  INFO 400436 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5ba95c41, org.springframework.security.web.context.SecurityContextPersistenceFilter@35b341bb, org.springframework.security.web.header.HeaderWriterFilter@440e0cf3, org.springframework.web.filter.CorsFilter@78089560, org.springframework.security.web.authentication.logout.LogoutFilter@2196e90a, com.okta.auth.security.JwtAuthenticationFilter@1b82be5c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7f3d46d4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@63846327, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@69a89f43, org.springframework.security.web.session.SessionManagementFilter@7fbb7b63, org.springframework.security.web.access.ExceptionTranslationFilter@72db5027, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@122afff9]
+2024-08-01 16:58:27.653  INFO 400436 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2024-08-01 16:58:27.778  WARN 400436 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-08-01 16:58:27.859  INFO 400436 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-08-01 16:58:28.038  INFO 400436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-08-01 16:58:28.287  INFO 400436 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2024-08-01 16:58:28.288  INFO 400436 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2024-08-01 16:58:28.616  INFO 400436 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2024-08-01 16:58:28.616  INFO 400436 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2024-08-01 16:58:29.019  INFO 400436 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-01 16:58:29.050  INFO 400436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 16:58:29.051  INFO 400436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 16:58:29.051  INFO 400436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 16:58:29.051  INFO 400436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 16:58:29.051  INFO 400436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 16:58:29.051  INFO 400436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-08-01 16:58:29.051  INFO 400436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 16:58:29.187  INFO 400436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 16:58:29.190  INFO 400436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Not registering with Eureka server per configuration
+2024-08-01 16:58:29.197  INFO 400436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1722511709194 with initial instances count: 0
+2024-08-01 16:58:29.199  INFO 400436 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application AUTH-SERVICE with eureka with status UP
+2024-08-01 16:58:29.241  INFO 400436 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2024-08-01 16:58:29.242  INFO 400436 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2024-08-01 16:58:30.206  INFO 400436 --- [restartedMain] c.o.auth.security.SecurityApplication    : Started SecurityApplication in 19.083 seconds (JVM running for 21.15)
+2024-08-01 16:58:59.220  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 16:58:59.224  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 16:58:59.227  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 16:58:59.227  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 16:58:59.229  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 16:58:59.231  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 16:58:59.235  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 16:58:59.341  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 16:59:29.354  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 16:59:29.354  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 16:59:29.354  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 16:59:29.354  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 16:59:29.354  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 16:59:29.354  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 16:59:29.355  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 16:59:29.373  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 16:59:59.384  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 16:59:59.386  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 16:59:59.386  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 16:59:59.386  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 16:59:59.387  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 16:59:59.387  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 16:59:59.396  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 16:59:59.409  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:00:29.414  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:00:29.426  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:00:29.427  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:00:29.427  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:00:29.427  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:00:29.427  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:00:29.427  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:00:29.447  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:00:59.461  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:00:59.461  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:00:59.462  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:00:59.462  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:00:59.462  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:00:59.462  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:00:59.462  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:00:59.483  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:01:29.490  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:01:29.490  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:01:29.491  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:01:29.492  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:01:29.492  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:01:29.492  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:01:29.492  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:01:29.508  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:01:59.527  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:01:59.528  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:01:59.529  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:01:59.530  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:01:59.530  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:01:59.530  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:01:59.530  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:01:59.543  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:02:29.553  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:02:29.555  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:02:29.556  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:02:29.556  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:02:29.556  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:02:29.556  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:02:29.557  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:02:29.571  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:02:59.588  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:02:59.588  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:02:59.589  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:02:59.589  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:02:59.589  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:02:59.589  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:02:59.595  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:02:59.616  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:03:29.057  INFO 400436 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-01 17:03:29.625  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:03:29.625  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:03:29.625  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:03:29.626  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:03:29.626  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:03:29.626  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:03:29.626  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:03:29.644  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:03:59.646  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:03:59.646  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:03:59.646  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:03:59.646  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:03:59.646  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:03:59.647  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:03:59.647  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:03:59.670  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:04:29.681  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:04:29.681  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:04:29.681  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:04:29.681  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:04:29.681  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:04:29.681  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:04:29.681  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:04:29.702  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:04:59.715  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:04:59.716  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:04:59.716  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:04:59.716  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:04:59.716  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:04:59.716  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:04:59.716  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:04:59.734  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:05:29.748  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:05:29.748  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:05:29.748  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:05:29.748  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:05:29.748  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:05:29.748  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:05:29.748  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:05:29.778  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:05:59.785  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:05:59.786  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:05:59.786  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:05:59.786  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:05:59.787  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:05:59.787  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:05:59.787  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:05:59.809  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:06:29.816  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:06:29.819  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:06:29.819  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:06:29.820  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:06:29.821  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:06:29.821  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:06:29.821  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:06:29.840  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:06:59.874  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:06:59.928  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:06:59.929  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:06:59.929  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:06:59.929  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:06:59.930  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:06:59.931  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:06:59.947  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:07:29.965  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:07:29.966  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:07:29.967  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:07:29.967  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:07:29.967  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:07:29.967  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:07:29.967  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:07:29.986  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:08:00.004  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:08:00.051  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:08:00.052  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:08:00.053  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:08:00.053  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:08:00.054  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:08:00.054  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:08:00.086  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:08:29.325  INFO 400436 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-01 17:08:30.102  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:08:30.102  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:08:30.102  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:08:30.103  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:08:30.103  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:08:30.103  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:08:30.103  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:08:30.121  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:09:00.207  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:09:00.208  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:09:00.214  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:09:00.214  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:09:00.345  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:09:00.345  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:09:00.345  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:09:00.381  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:09:30.401  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:09:30.406  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:09:30.411  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:09:30.412  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:09:30.421  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:09:30.421  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:09:30.421  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:09:30.439  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:10:00.462  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:10:00.465  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:10:00.465  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:10:00.465  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:10:00.469  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:10:00.471  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:10:00.471  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:10:00.493  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:10:30.542  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:10:30.542  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:10:30.543  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:10:30.543  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:10:30.594  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:10:30.597  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:10:30.597  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:10:30.610  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:11:00.621  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:11:00.622  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:11:00.622  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:11:00.623  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:11:00.623  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:11:00.624  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:11:00.624  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:11:00.646  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:11:30.654  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:11:30.663  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:11:30.663  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:11:30.663  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:11:30.665  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:11:30.665  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:11:30.666  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:11:30.708  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:12:00.723  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:12:00.724  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:12:00.724  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:12:00.725  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:12:00.727  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:12:00.728  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:12:00.728  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:12:00.741  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:12:30.756  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:12:30.757  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:12:30.758  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:12:30.758  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:12:30.759  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:12:30.767  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:12:30.767  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:12:30.787  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:13:00.791  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:13:00.792  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:13:00.792  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:13:00.792  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:13:00.793  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:13:00.793  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:13:00.793  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:13:00.818  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:13:29.342  INFO 400436 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-01 17:13:30.834  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:13:30.841  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:13:30.848  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:13:30.849  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:13:30.855  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:13:30.856  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:13:30.856  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:13:30.909  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:14:00.968  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:14:00.973  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:14:00.973  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:14:00.974  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:14:00.977  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:14:00.977  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:14:00.979  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:14:01.090  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:14:31.104  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:14:31.105  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:14:31.106  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:14:31.107  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:14:31.107  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:14:31.107  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:14:31.107  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:14:31.128  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:15:01.156  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:15:01.157  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:15:01.157  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:15:01.157  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:15:01.158  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:15:01.158  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:15:01.158  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:15:01.179  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:15:31.183  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:15:31.184  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:15:31.186  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:15:31.186  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:15:31.187  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:15:31.187  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:15:31.187  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:15:31.206  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:16:01.216  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:16:01.217  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:16:01.217  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:16:01.217  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:16:01.218  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:16:01.218  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:16:01.218  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:16:01.240  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:16:31.246  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:16:31.247  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:16:31.247  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:16:31.247  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:16:31.247  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:16:31.247  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:16:31.247  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:16:31.264  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:17:01.267  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:17:01.267  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:17:01.267  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:17:01.267  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:17:01.267  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:17:01.268  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:17:01.268  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:17:01.288  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:17:31.293  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:17:31.294  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:17:31.295  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:17:31.295  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:17:31.296  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:17:31.296  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:17:31.296  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:17:31.314  INFO 400436 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:18:15.249  INFO 400564 --- [restartedMain] c.o.auth.security.SecurityApplication    : Starting SecurityApplication using Java 11.0.16.1 on L108587 with PID 400564 (C:\Users\830466\Desktop\security\build\classes\java\main started by 830466 in C:\Users\830466\Desktop\security)
+2024-08-01 17:18:15.257  INFO 400564 --- [restartedMain] c.o.auth.security.SecurityApplication    : The following profiles are active: local
+2024-08-01 17:18:15.531  INFO 400564 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-01 17:18:15.532  INFO 400564 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-01 17:18:25.405  INFO 400564 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-01 17:18:26.471  INFO 400564 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1012 ms. Found 5 JPA repository interfaces.
+2024-08-01 17:18:28.123  INFO 400564 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=638bb448-e736-3d1d-9cf3-bad776307a54
+2024-08-01 17:18:35.450  INFO 400564 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2024-08-01 17:18:35.635  INFO 400564 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-01 17:18:35.640  INFO 400564 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2024-08-01 17:18:37.342  INFO 400564 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-01 17:18:37.343  INFO 400564 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 21808 ms
+2024-08-01 17:18:42.101  INFO 400564 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-01 17:18:42.538  INFO 400564 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2024-08-01 17:18:44.104  INFO 400564 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-08-01 17:18:45.383  INFO 400564 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-01 17:18:46.866  INFO 400564 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-01 17:18:47.196  WARN 400564 --- [restartedMain] PoolOnTimeoutConnectionAcquiringStrategy : Connection was acquired in 1814 millis, timeoutMillis is set to 500
+2024-08-01 17:18:47.197  INFO 400564 --- [restartedMain] PoolOnTimeoutConnectionAcquiringStrategy : Pool size changed by other thread, expected -1 and actual value 10
+2024-08-01 17:18:47.201  INFO 400564 --- [restartedMain] c.v.flexypool.FlexyPoolDataSource        : Connection acquired in 1819 millis, while threshold is set to -1 in dataSource FlexyPoolDataSource
+2024-08-01 17:18:47.850  INFO 400564 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2024-08-01 17:18:48.184  INFO 400564 --- [restartedMain] c.v.flexypool.FlexyPoolDataSource        : Connection leased for 985 millis, while threshold is set to 0 in dataSource FlexyPoolDataSource
+2024-08-01 17:18:51.287  INFO 400564 --- [restartedMain] c.v.flexypool.FlexyPoolDataSource        : Connection acquired in 0 millis, while threshold is set to -1 in dataSource FlexyPoolDataSource
+2024-08-01 17:18:51.418  INFO 400564 --- [restartedMain] c.v.flexypool.FlexyPoolDataSource        : Connection leased for 131 millis, while threshold is set to 0 in dataSource FlexyPoolDataSource
+2024-08-01 17:18:51.420  INFO 400564 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-08-01 17:18:51.445  INFO 400564 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-01 17:18:51.508  INFO 400564 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-01 17:18:52.702  WARN 400564 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-01 17:19:05.196  INFO 400564 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2024-08-01 17:19:06.411  INFO 400564 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ad4bcb29-40e6-4818-839e-4920196b3260
+
+2024-08-01 17:19:07.453  INFO 400564 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6de44560, org.springframework.security.web.context.SecurityContextPersistenceFilter@795fd382, org.springframework.security.web.header.HeaderWriterFilter@271fea76, org.springframework.web.filter.CorsFilter@56ebc21b, org.springframework.security.web.authentication.logout.LogoutFilter@2bfb7358, com.okta.auth.security.JwtAuthenticationFilter@292ba1ff, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4e5f2505, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4d61b591, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1c1b6508, org.springframework.security.web.session.SessionManagementFilter@5cb7929d, org.springframework.security.web.access.ExceptionTranslationFilter@3d4ec348, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@68303e1c]
+2024-08-01 17:19:12.937  INFO 400564 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2024-08-01 17:19:13.133  WARN 400564 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-08-01 17:19:13.275  INFO 400564 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-08-01 17:19:13.595  INFO 400564 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-08-01 17:19:14.169  INFO 400564 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2024-08-01 17:19:14.170  INFO 400564 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2024-08-01 17:19:14.963  INFO 400564 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2024-08-01 17:19:14.963  INFO 400564 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2024-08-01 17:19:15.838  INFO 400564 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-01 17:19:15.900  INFO 400564 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:19:15.900  INFO 400564 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:19:15.901  INFO 400564 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:19:15.901  INFO 400564 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:19:15.901  INFO 400564 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:19:15.902  INFO 400564 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-08-01 17:19:15.902  INFO 400564 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:19:16.368  INFO 400564 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:19:16.375  INFO 400564 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Not registering with Eureka server per configuration
+2024-08-01 17:19:16.387  INFO 400564 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1722512956382 with initial instances count: 0
+2024-08-01 17:19:16.392  INFO 400564 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application AUTH-SERVICE with eureka with status UP
+2024-08-01 17:19:16.456  INFO 400564 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2024-08-01 17:19:16.458  INFO 400564 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2024-08-01 17:19:17.792  INFO 400564 --- [restartedMain] c.o.auth.security.SecurityApplication    : Started SecurityApplication in 66.798 seconds (JVM running for 73.165)
+2024-08-01 17:19:46.383  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:19:46.385  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:19:46.386  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:19:46.386  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:19:46.387  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:19:46.387  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:19:46.387  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:19:46.402  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:20:16.423  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:20:16.425  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:20:16.427  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:20:16.427  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:20:16.427  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:20:16.427  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:20:16.429  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:20:16.455  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:20:46.468  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:20:46.469  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:20:46.469  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:20:46.470  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:20:46.470  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:20:46.470  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:20:46.470  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:20:46.490  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:21:16.499  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:21:16.500  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:21:16.501  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:21:16.501  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:21:16.501  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:21:16.501  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:21:16.502  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:21:16.520  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:21:46.521  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:21:46.522  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:21:46.522  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:21:46.522  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:21:46.524  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:21:46.524  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:21:46.524  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:21:46.542  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:22:16.555  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:22:16.556  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:22:16.560  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:22:16.560  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:22:16.561  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:22:16.561  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:22:16.561  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:22:16.576  INFO 400564 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:22:41.737  INFO 401612 --- [restartedMain] c.o.auth.security.SecurityApplication    : Starting SecurityApplication using Java 11.0.16.1 on L108587 with PID 401612 (C:\Users\830466\Desktop\security\build\classes\java\main started by 830466 in C:\Users\830466\Desktop\security)
+2024-08-01 17:22:41.741  INFO 401612 --- [restartedMain] c.o.auth.security.SecurityApplication    : The following profiles are active: local
+2024-08-01 17:22:41.907  INFO 401612 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-01 17:22:41.908  INFO 401612 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-01 17:22:45.992  INFO 401612 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-01 17:22:46.629  INFO 401612 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 603 ms. Found 5 JPA repository interfaces.
+2024-08-01 17:22:47.588  INFO 401612 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=638bb448-e736-3d1d-9cf3-bad776307a54
+2024-08-01 17:22:50.028  INFO 401612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2024-08-01 17:22:50.066  INFO 401612 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-01 17:22:50.066  INFO 401612 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2024-08-01 17:22:50.491  INFO 401612 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-01 17:22:50.492  INFO 401612 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8582 ms
+2024-08-01 17:22:51.910  INFO 401612 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-01 17:22:52.312  INFO 401612 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2024-08-01 17:22:53.153  INFO 401612 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-08-01 17:23:01.644  INFO 399032 --- [restartedMain] c.o.auth.security.SecurityApplication    : Starting SecurityApplication using Java 11.0.16.1 on L108587 with PID 399032 (C:\Users\830466\Desktop\security\build\classes\java\main started by 830466 in C:\Users\830466\Desktop\security)
+2024-08-01 17:23:01.649  INFO 399032 --- [restartedMain] c.o.auth.security.SecurityApplication    : The following profiles are active: local
+2024-08-01 17:23:01.850  INFO 399032 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-01 17:23:01.850  INFO 399032 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-01 17:23:06.224  INFO 399032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-01 17:23:06.901  INFO 399032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 647 ms. Found 5 JPA repository interfaces.
+2024-08-01 17:23:08.302  INFO 399032 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=638bb448-e736-3d1d-9cf3-bad776307a54
+2024-08-01 17:23:10.937  INFO 399032 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2024-08-01 17:23:10.965  INFO 399032 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-01 17:23:10.966  INFO 399032 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2024-08-01 17:23:11.510  INFO 399032 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-01 17:23:11.511  INFO 399032 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 9658 ms
+2024-08-01 17:23:14.232  INFO 399032 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-01 17:23:14.598  INFO 399032 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2024-08-01 17:23:15.317  INFO 399032 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-08-01 17:23:15.715  INFO 399032 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-01 17:23:16.600  INFO 399032 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-01 17:23:16.632  WARN 399032 --- [restartedMain] PoolOnTimeoutConnectionAcquiringStrategy : Connection was acquired in 918 millis, timeoutMillis is set to 500
+2024-08-01 17:23:16.633  INFO 399032 --- [restartedMain] PoolOnTimeoutConnectionAcquiringStrategy : Pool size changed by other thread, expected -1 and actual value 10
+2024-08-01 17:23:16.638  INFO 399032 --- [restartedMain] c.v.flexypool.FlexyPoolDataSource        : Connection acquired in 924 millis, while threshold is set to 50 in dataSource FlexyPoolDataSource
+2024-08-01 17:23:16.893  INFO 399032 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2024-08-01 17:23:21.185  INFO 399032 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-08-01 17:23:21.221  INFO 399032 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-01 17:23:21.321  INFO 399032 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-01 17:23:21.917  WARN 399032 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-01 17:23:30.587  INFO 399032 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2024-08-01 17:23:31.781  INFO 399032 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: b6e09caa-6a48-4832-955e-ccb3043524be
+
+2024-08-01 17:23:34.088  INFO 399032 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@61605329, org.springframework.security.web.context.SecurityContextPersistenceFilter@49ff7cc7, org.springframework.security.web.header.HeaderWriterFilter@7a1e457e, org.springframework.web.filter.CorsFilter@16e6e443, org.springframework.security.web.authentication.logout.LogoutFilter@17c29f3, com.okta.auth.security.JwtAuthenticationFilter@2bf65372, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7f810eb1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@12fdd9f6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3599b9a7, org.springframework.security.web.session.SessionManagementFilter@33089111, org.springframework.security.web.access.ExceptionTranslationFilter@4ab2dc93, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3e03f56e]
+2024-08-01 17:23:44.776  INFO 399032 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2024-08-01 17:23:45.150  WARN 399032 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-08-01 17:23:45.549  INFO 399032 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-08-01 17:23:45.946  INFO 399032 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-08-01 17:23:46.563  INFO 399032 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2024-08-01 17:23:46.564  INFO 399032 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2024-08-01 17:23:48.065  INFO 399032 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2024-08-01 17:23:48.068  INFO 399032 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2024-08-01 17:23:49.626  INFO 399032 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-01 17:23:49.772  INFO 399032 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:23:49.775  INFO 399032 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:23:49.782  INFO 399032 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:23:49.784  INFO 399032 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:23:49.784  INFO 399032 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:23:49.784  INFO 399032 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-08-01 17:23:49.785  INFO 399032 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:23:50.702  INFO 399032 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:23:50.714  INFO 399032 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-08-01 17:23:50.726  INFO 399032 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-08-01 17:23:50.758  INFO 399032 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1722513230744 with initial instances count: 0
+2024-08-01 17:23:50.769  INFO 399032 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application AUTH-SERVICE with eureka with status UP
+2024-08-01 17:23:50.773  INFO 399032 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1722513230773, current=UP, previous=STARTING]
+2024-08-01 17:23:50.785  INFO 399032 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/L108587.tcgc.in:AUTH-SERVICE:8082: registering service...
+2024-08-01 17:23:50.940  INFO 399032 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2024-08-01 17:23:50.948  INFO 399032 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2024-08-01 17:23:55.380  INFO 399032 --- [restartedMain] c.o.auth.security.SecurityApplication    : Started SecurityApplication in 55.733 seconds (JVM running for 57.381)
+2024-08-01 17:23:56.828  INFO 399032 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/L108587.tcgc.in:AUTH-SERVICE:8082 - registration status: 204
+2024-08-01 17:24:20.729  INFO 399032 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:24:20.732  INFO 399032 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:24:20.735  INFO 399032 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:24:20.736  INFO 399032 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:24:20.737  INFO 399032 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:24:20.739  INFO 399032 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 17:24:20.740  INFO 399032 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:24:21.019  INFO 399032 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:25:56.256  INFO 402144 --- [restartedMain] c.o.auth.security.SecurityApplication    : Starting SecurityApplication using Java 11.0.16.1 on L108587 with PID 402144 (C:\Users\830466\Desktop\security\build\classes\java\main started by 830466 in C:\Users\830466\Desktop\security)
+2024-08-01 17:25:56.259  INFO 402144 --- [restartedMain] c.o.auth.security.SecurityApplication    : The following profiles are active: local
+2024-08-01 17:25:56.422  INFO 402144 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-01 17:25:56.425  INFO 402144 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-01 17:26:00.164  INFO 402144 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-01 17:26:01.108  INFO 402144 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 894 ms. Found 5 JPA repository interfaces.
+2024-08-01 17:26:02.646  INFO 402144 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e3cd0bd3-c68f-3402-962b-94391a0a1e68
+2024-08-01 17:26:09.799  INFO 402144 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2024-08-01 17:26:10.005  INFO 402144 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-01 17:26:10.011  INFO 402144 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2024-08-01 17:26:10.741  INFO 402144 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-01 17:26:10.741  INFO 402144 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 14314 ms
+2024-08-01 17:26:13.342  INFO 402144 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-01 17:26:13.837  INFO 402144 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2024-08-01 17:26:14.516  INFO 402144 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-08-01 17:26:14.878  INFO 402144 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-01 17:26:15.929  INFO 402144 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-01 17:26:15.944  WARN 402144 --- [restartedMain] PoolOnTimeoutConnectionAcquiringStrategy : Connection was acquired in 1068 millis, timeoutMillis is set to 500
+2024-08-01 17:26:15.947  INFO 402144 --- [restartedMain] PoolOnTimeoutConnectionAcquiringStrategy : Pool size changed by other thread, expected -1 and actual value 10
+2024-08-01 17:26:15.949  INFO 402144 --- [restartedMain] c.v.flexypool.FlexyPoolDataSource        : Connection acquired in 1072 millis, while threshold is set to 50 in dataSource FlexyPoolDataSource
+2024-08-01 17:26:16.526  INFO 402144 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2024-08-01 17:26:19.456  INFO 402144 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-08-01 17:26:19.490  INFO 402144 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-01 17:26:19.793  INFO 402144 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-01 17:26:21.345  WARN 402144 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-01 17:26:26.037  INFO 402144 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: e1a23121-1fa0-47b3-b148-b24ce2abf8ac
+
+2024-08-01 17:26:26.511  INFO 402144 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6bd543dd, org.springframework.security.web.context.SecurityContextPersistenceFilter@28ac2cf3, org.springframework.security.web.header.HeaderWriterFilter@3d4e0dac, org.springframework.web.filter.CorsFilter@1329e22e, org.springframework.security.web.authentication.logout.LogoutFilter@5b33a6a0, com.okta.auth.security.JwtAuthenticationFilter@56c6fdaf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@41c68d68, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@53f127b4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2d0e2d56, org.springframework.security.web.session.SessionManagementFilter@44d6c2e3, org.springframework.security.web.access.ExceptionTranslationFilter@481b4449, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3b9a258c]
+2024-08-01 17:26:28.434  INFO 402144 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-08-01 17:26:29.611  WARN 402144 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-08-01 17:26:29.811  INFO 402144 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-08-01 17:26:30.206  INFO 402144 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-08-01 17:26:30.236  INFO 402144 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-01 17:26:30.353  INFO 402144 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 17:26:30.354  INFO 402144 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 17:26:30.355  INFO 402144 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 17:26:30.356  INFO 402144 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 17:26:30.357  INFO 402144 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 17:26:30.358  INFO 402144 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-08-01 17:26:30.359  INFO 402144 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 17:26:31.399  INFO 402144 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 17:26:31.406  INFO 402144 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-08-01 17:26:31.411  INFO 402144 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-08-01 17:26:31.424  INFO 402144 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1722513391421 with initial instances count: 1
+2024-08-01 17:26:31.426  INFO 402144 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application AUTH-SERVICE with eureka with status UP
+2024-08-01 17:26:31.427  INFO 402144 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1722513391427, current=UP, previous=STARTING]
+2024-08-01 17:26:31.432  INFO 402144 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/L108587.tcgc.in:AUTH-SERVICE:8082: registering service...
+2024-08-01 17:26:31.486  INFO 402144 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2024-08-01 17:26:31.487  INFO 402144 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2024-08-01 17:26:31.540  INFO 402144 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/L108587.tcgc.in:AUTH-SERVICE:8082 - registration status: 204
+2024-08-01 17:26:32.455  INFO 402144 --- [restartedMain] c.o.auth.security.SecurityApplication    : Started SecurityApplication in 38.269 seconds (JVM running for 40.348)
+2024-08-01 17:31:30.380  INFO 402144 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-01 17:36:30.414  INFO 402144 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-01 17:41:30.462  INFO 402144 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-01 17:46:30.503  INFO 402144 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-01 17:51:30.527  INFO 402144 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-01 17:56:30.550  INFO 402144 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-01 18:01:30.564  INFO 402144 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-01 22:11:57.183  WARN 402144 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4h7m9s596ms632µs400ns).
+2024-08-01 22:12:17.410  WARN 402144 --- [DiscoveryClient-1] c.netflix.discovery.TimedSupervisorTask  : task supervisor timed out
+
+java.util.concurrent.TimeoutException: null
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204) ~[na:na]
+	at com.netflix.discovery.TimedSupervisorTask.run(TimedSupervisorTask.java:68) ~[eureka-client-1.10.14.jar:1.10.14]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2024-08-01 22:12:17.505  WARN 402144 --- [DiscoveryClient-0] c.netflix.discovery.TimedSupervisorTask  : task supervisor timed out
+
+java.util.concurrent.TimeoutException: null
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204) ~[na:na]
+	at com.netflix.discovery.TimedSupervisorTask.run(TimedSupervisorTask.java:68) ~[eureka-client-1.10.14.jar:1.10.14]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2024-08-01 22:15:25.983  INFO 387836 --- [restartedMain] c.o.auth.security.SecurityApplication    : Starting SecurityApplication using Java 11.0.16.1 on L108587 with PID 387836 (C:\Users\830466\Desktop\security\build\classes\java\main started by 830466 in C:\Users\830466\Desktop\security)
+2024-08-01 22:15:25.988  INFO 387836 --- [restartedMain] c.o.auth.security.SecurityApplication    : The following profiles are active: local
+2024-08-01 22:15:26.212  INFO 387836 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-01 22:15:26.216  INFO 387836 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-01 22:15:30.458  INFO 387836 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-01 22:15:31.557  INFO 387836 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1047 ms. Found 5 JPA repository interfaces.
+2024-08-01 22:15:33.251  INFO 387836 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e3cd0bd3-c68f-3402-962b-94391a0a1e68
+2024-08-01 22:15:36.010  INFO 387836 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2024-08-01 22:15:36.051  INFO 387836 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-01 22:15:36.057  INFO 387836 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2024-08-01 22:15:36.548  INFO 387836 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-01 22:15:36.549  INFO 387836 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 10330 ms
+2024-08-01 22:15:37.576  INFO 387836 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-01 22:15:37.842  INFO 387836 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2024-08-01 22:15:38.670  INFO 387836 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-08-01 22:15:39.153  INFO 387836 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-01 22:15:40.226  INFO 387836 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-01 22:15:40.240  WARN 387836 --- [restartedMain] PoolOnTimeoutConnectionAcquiringStrategy : Connection was acquired in 1088 millis, timeoutMillis is set to 500
+2024-08-01 22:15:40.243  INFO 387836 --- [restartedMain] PoolOnTimeoutConnectionAcquiringStrategy : Pool size changed by other thread, expected -1 and actual value 10
+2024-08-01 22:15:40.247  INFO 387836 --- [restartedMain] c.v.flexypool.FlexyPoolDataSource        : Connection acquired in 1095 millis, while threshold is set to 50 in dataSource FlexyPoolDataSource
+2024-08-01 22:15:40.418  INFO 387836 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2024-08-01 22:15:45.891  INFO 387836 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-08-01 22:15:45.934  INFO 387836 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-01 22:15:46.051  INFO 387836 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-01 22:15:46.476  WARN 387836 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-01 22:15:49.541  INFO 387836 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 737e20e9-966d-435a-864a-7a2b3bc64e74
+
+2024-08-01 22:15:50.115  INFO 387836 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6535951, org.springframework.security.web.context.SecurityContextPersistenceFilter@e5cae05, org.springframework.security.web.header.HeaderWriterFilter@15dc3365, org.springframework.web.filter.CorsFilter@2b88b62a, org.springframework.security.web.authentication.logout.LogoutFilter@2580200f, com.okta.auth.security.JwtAuthenticationFilter@78f92921, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@50ef3877, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@16ebafe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@47841e99, org.springframework.security.web.session.SessionManagementFilter@61b8d9dd, org.springframework.security.web.access.ExceptionTranslationFilter@777a3042, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7fb9b582]
+2024-08-01 22:15:51.890  INFO 387836 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-08-01 22:15:53.029  WARN 387836 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-08-01 22:15:53.123  INFO 387836 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-08-01 22:15:53.459  INFO 387836 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-08-01 22:15:53.478  INFO 387836 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-01 22:15:53.569  INFO 387836 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 22:15:53.570  INFO 387836 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 22:15:53.570  INFO 387836 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 22:15:53.570  INFO 387836 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 22:15:53.571  INFO 387836 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 22:15:53.571  INFO 387836 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-08-01 22:15:53.571  INFO 387836 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 22:15:55.846  INFO 387836 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-01 22:15:55.854  INFO 387836 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-08-01 22:15:55.867  INFO 387836 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-08-01 22:15:55.888  INFO 387836 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1722530755881 with initial instances count: 0
+2024-08-01 22:15:55.895  INFO 387836 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application AUTH-SERVICE with eureka with status UP
+2024-08-01 22:15:55.898  INFO 387836 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1722530755898, current=UP, previous=STARTING]
+2024-08-01 22:15:55.907  INFO 387836 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/L108587.tcgc.in:AUTH-SERVICE:8082: registering service...
+2024-08-01 22:15:56.022  INFO 387836 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2024-08-01 22:15:56.035  INFO 387836 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2024-08-01 22:15:56.393  INFO 387836 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/L108587.tcgc.in:AUTH-SERVICE:8082 - registration status: 204
+2024-08-01 22:15:58.457  INFO 387836 --- [restartedMain] c.o.auth.security.SecurityApplication    : Started SecurityApplication in 34.914 seconds (JVM running for 37.275)
+2024-08-01 22:16:25.875  INFO 387836 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-01 22:16:25.876  INFO 387836 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-01 22:16:25.877  INFO 387836 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-01 22:16:25.878  INFO 387836 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-01 22:16:25.879  INFO 387836 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-01 22:16:25.880  INFO 387836 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-01 22:16:25.881  INFO 387836 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-01 22:16:25.959  INFO 387836 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
