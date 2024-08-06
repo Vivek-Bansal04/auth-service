@@ -7,7 +7,7 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.io.Serializable;
 
-//@Entity
+@Entity
 @Getter
 @Setter
 public class BankTransfer implements Serializable {

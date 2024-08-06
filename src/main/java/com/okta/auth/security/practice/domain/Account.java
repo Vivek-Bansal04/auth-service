@@ -9,7 +9,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import java.io.Serializable;
 
-//@Entity
+@Entity
 @Getter
 @Setter
 public class Account implements Serializable {
