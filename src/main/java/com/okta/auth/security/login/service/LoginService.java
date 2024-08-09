@@ -8,4 +8,6 @@ public interface LoginService {
     LoginResponse loginUser(LoginRequest request) throws Exception;
 
     UserEntity registerUser(LoginRequest request);
+
+    boolean validateUserToken(String token);
 }

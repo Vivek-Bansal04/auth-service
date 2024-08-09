@@ -23,25 +23,26 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
     @Autowired
     private JWTUtil jwtUtil;
 
-
+    //this filter is used in case of monolithic architecture
+    //we have used an endpoint for validating in case of microservice architecture
     @Override
     protected void doFilterInternal(HttpServletRequest request,
                                     HttpServletResponse response,
                                     FilterChain filterChain
     ) throws ServletException, IOException {
-        final String token = getBearerToken(request.getHeader("Authorization"));
-        String identifier = null;
-        if(token != null){
-            identifier = jwtUtil.extractIdentifier(token);
-        }
-
-        if(identifier != null && jwtUtil.validateToken(token, identifier) && SecurityContextHolder.getContext().getAuthentication() == null){
-
-            UsernamePasswordAuthenticationToken apiToken = new UsernamePasswordAuthenticationToken(identifier, null, Collections.emptyList());
-
-            SecurityContextHolder.getContext().setAuthentication(apiToken);
-
-        }
+//        final String token = getBearerToken(request.getHeader("Authorization"));
+//        String identifier = null;
+//        if(token != null){
+//            identifier = jwtUtil.extractIdentifier(token);
+//        }
+//
+//        if(identifier != null && jwtUtil.validateToken(token, identifier) && SecurityContextHolder.getContext().getAuthentication() == null){
+//
+//            UsernamePasswordAuthenticationToken apiToken = new UsernamePasswordAuthenticationToken(identifier, null, Collections.emptyList());
+//
+//            SecurityContextHolder.getContext().setAuthentication(apiToken);
+//
+//        }
         filterChain.doFilter(request, response);
     }
 

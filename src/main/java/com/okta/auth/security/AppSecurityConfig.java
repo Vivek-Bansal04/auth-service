@@ -51,7 +51,7 @@ public class AppSecurityConfig extends WebSecurityConfigurerAdapter {
 
         uniqueIgnorePaths.addAll(List.of(
                 "/actuator/health","/otp/generate","/hello","/external",
-                "/external-after","/nested","/transfer","/execute"));
+                "/external-after","/nested","/transfer","/execute","/user/validate"));
 //        uniqueIgnorePaths.add("/otp/generate");
 //        uniqueIgnorePaths.add("/otp/generate");
 //        uniqueIgnorePaths.add("/otp/generate");

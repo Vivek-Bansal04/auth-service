@@ -13,6 +13,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.validation.constraints.NotBlank;
 import java.util.Objects;
 
 
@@ -62,6 +63,15 @@ public class LoginServiceImpl implements LoginService{
         String passCode = StringUtils.isNotBlank(request.getPassword()) ? request.getPassword() : request.getOtp();
         user.setPassword(getEncryptedPassword(request.getMobile(),passCode));
         return userRepository.save(user);
+    }
+
+    @Override
+    public boolean validateUserToken(@NotBlank String token){
+        String identifier = jwtService.extractIdentifier(token);
+        if(identifier != null && jwtService.validateToken(token, identifier)){
+            return true;
+        }
+        return false;
     }
 
     private boolean verifyOTP(LoginRequest loginRequest,boolean remove) {
