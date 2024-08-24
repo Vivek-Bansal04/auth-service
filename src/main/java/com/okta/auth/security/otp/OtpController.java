@@ -7,8 +7,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.servlet.http.HttpServletResponse;
-
 @RestController
 @RequestMapping("/otp")
 public class OtpController {
@@ -18,6 +16,6 @@ public class OtpController {
 
     @GetMapping("/generate")
     public String generate(@RequestParam String identifier) {
-        return otpService.generateOtp(identifier);
+        return otpService.generateAndSaveOtp(identifier);
     }
 }
