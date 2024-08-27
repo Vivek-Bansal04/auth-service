@@ -1,6 +1,7 @@
 package com.okta.auth.security.advice;
 
 import com.okta.auth.security.utils.ResponseBuilder;
+import com.okta.auth.security.utils.exceptions.UnAuthorizedException;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.MDC;
 import org.springframework.http.HttpStatus;
@@ -22,6 +23,20 @@ public class TLExceptionAdvice extends ResponseEntityExceptionHandler {
         final ResponseBuilder<Object> output = parseUnknownException(ex);
 
         return new ResponseEntity<>(output, HttpStatus.INTERNAL_SERVER_ERROR);
+    }
+
+    @ExceptionHandler({UnAuthorizedException.class})
+    public final ResponseEntity<Object> handleResourceNotFoundException(UnAuthorizedException ex) {
+        log.error("", ex);
+
+        final ResponseBuilder<Object> output = new ResponseBuilder<>();
+        output.setStatus(HttpStatus.UNAUTHORIZED.value());
+        output.setMessage(ex.getMessage());
+        output.setError(HttpStatus.UNAUTHORIZED.getReasonPhrase());
+        output.setErrorData(ex.getCause());
+//        output.setRequestId(MDC.get(REQUEST_ID));
+
+        return new ResponseEntity<>(output, HttpStatus.NOT_FOUND);
     }
 
     private ResponseBuilder<Object> parseUnknownException(Exception ex) {

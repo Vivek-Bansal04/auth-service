@@ -33,7 +33,7 @@ public class OtpServiceImpl implements OtpService {
         }
     };
 
-    private static long OTP_EXPIRY_TIME = 60 * 100;
+    private static final long OTP_EXPIRY_TIME = 60*100;
 
     private static final String REDIS_OTP_HASH_KEY_PREFIX = "otp";
 
@@ -59,7 +59,7 @@ public class OtpServiceImpl implements OtpService {
         if(otp!=null){
             //as user wanted to regenerate otp so returned same otp with updated expiration time
             cacheService.updateKeyExpiration(key,OTP_EXPIRY_TIME);
-            return (String) otp;
+            return otp.toString();
         }
         String randomOtp = generateOTP(identifier);
         cacheService.putInCache(key,randomOtp,OTP_EXPIRY_TIME);
@@ -70,7 +70,7 @@ public class OtpServiceImpl implements OtpService {
     public boolean verifyOTP(String identifier, String randomOtp,boolean removeFromCache) {
         String key = String.format("%s-%s", REDIS_OTP_HASH_KEY_PREFIX, identifier);
         String otp = getOTP(identifier);
-        boolean isVerified = otp.equals(randomOtp);
+        boolean isVerified = otp != null && otp.equals(randomOtp);
         if(removeFromCache){
             cacheService.delKeyFromCache(key);
         }
@@ -80,7 +80,8 @@ public class OtpServiceImpl implements OtpService {
     @Override
     public String getOTP(String identifier) {
         String key = String.format("%s-%s", REDIS_OTP_HASH_KEY_PREFIX, identifier);
-        return (String) cacheService.getFromCache(key);
+        Object otp = cacheService.getFromCache(key);
+        return otp!=null?otp.toString():null;
     }
 
     @Override

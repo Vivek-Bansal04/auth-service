@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 @Service
 public class RedisCacheService implements ICacheService {
 
-    private RedisTemplate<String, Object> redisTemplate;
+    private final RedisTemplate<String, Object> redisTemplate;
 
     @Autowired
     public RedisCacheService(RedisTemplate<String,Object> redisTemplate){
@@ -24,7 +24,7 @@ public class RedisCacheService implements ICacheService {
 
     @Override
     public void putInCache(String key, Object value, long expiration) {
-        redisTemplate.opsForValue().set(key,value,expiration);
+        redisTemplate.opsForValue().set(key,value,expiration,TimeUnit.SECONDS);
     }
 
     @Override
