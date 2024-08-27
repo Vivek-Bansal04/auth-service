@@ -1,17 +1,18 @@
 package com.okta.auth.security.otp.service;
 
+import com.okta.auth.security.cache.service.ICacheService;
 import com.okta.auth.security.communication.service.SmsService;
 import com.okta.auth.security.otp.OtpRepository;
-import com.okta.auth.security.otp.entity.Otp;
+import com.okta.auth.security.utils.exceptions.RequestValidationException;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 @Service
 @Slf4j
@@ -21,14 +22,8 @@ public class OtpServiceImpl implements OtpService {
 
     private final OtpRepository otpRepository;
 
-    @Autowired
-    public OtpServiceImpl(
-            SmsService smsService,
-            OtpRepository otpRepository
-    ){
-        this.smsService = smsService;
-        this.otpRepository = otpRepository;
-    }
+    @Qualifier("redisCacheService")
+    private final ICacheService cacheService;
 
     public static List<String> demoMobileNos = new ArrayList<String>() {
         {
@@ -37,30 +32,71 @@ public class OtpServiceImpl implements OtpService {
             add("77777777777");
         }
     };
-    @Override
-    @Transactional
-    public String generateOtp(String identifier) {
-        Otp otp = otpRepository.findOtpByIdentifier(identifier);
 
-        String randomOtp = generateOTP(identifier, 60 * 1000); // 1000 min expiry
+    private static final long OTP_EXPIRY_TIME = 60*100;
 
-        if(Objects.isNull(otp)){
-            Otp otp1 = new Otp();
-            otp1.setIdentifier(identifier);
-            otp1.setCreatedAt(LocalDateTime.now());
-            otp1.setValue(randomOtp);
-            otpRepository.save(otp1);
-        }else{
-            otp.setCreatedAt(LocalDateTime.now());
-            otp.setValue(randomOtp);
-            otpRepository.save(otp);
-        }
+    private static final String REDIS_OTP_HASH_KEY_PREFIX = "otp";
 
-        return randomOtp;
+    @Autowired
+    public OtpServiceImpl(
+            SmsService smsService,
+            OtpRepository otpRepository,
+            ICacheService cacheService
+    ){
+        this.smsService = smsService;
+        this.otpRepository = otpRepository;
+        this.cacheService = cacheService;
     }
 
 
-    private String generateOTP(String identifier, int expiry) {
+    @Override
+    @Transactional
+    public String generateAndSaveOtp(String identifier) {
+        validateIdentifier(identifier);
+        String key = String.format("%s-%s", REDIS_OTP_HASH_KEY_PREFIX, identifier);
+
+        Object otp = cacheService.getFromCache(key);
+        if(otp!=null){
+            //as user wanted to regenerate otp so returned same otp with updated expiration time
+            cacheService.updateKeyExpiration(key,OTP_EXPIRY_TIME);
+            return otp.toString();
+        }
+        String randomOtp = generateOTP(identifier);
+        cacheService.putInCache(key,randomOtp,OTP_EXPIRY_TIME);
+        return randomOtp;
+    }
+
+    @Override
+    public boolean verifyOTP(String identifier, String randomOtp,boolean removeFromCache) {
+        String key = String.format("%s-%s", REDIS_OTP_HASH_KEY_PREFIX, identifier);
+        String otp = getOTP(identifier);
+        boolean isVerified = otp != null && otp.equals(randomOtp);
+        if(removeFromCache){
+            cacheService.delKeyFromCache(key);
+        }
+        return isVerified;
+    }
+
+    @Override
+    public String getOTP(String identifier) {
+        String key = String.format("%s-%s", REDIS_OTP_HASH_KEY_PREFIX, identifier);
+        Object otp = cacheService.getFromCache(key);
+        return otp!=null?otp.toString():null;
+    }
+
+    @Override
+    public boolean generateAndSendOtp(String identifier) {
+        //TODO integrate sms service
+        String otp = generateAndSaveOtp(identifier);
+        if(!demoMobileNos.contains(identifier) && !identifier.startsWith("2222")){
+            //smsService.send(identifier, otp);
+        }
+
+        return true;
+    }
+
+
+    private String generateOTP(String identifier) {
         try {
             String otp;
             if (demoMobileNos.contains(identifier) || identifier.startsWith("2222")) {
@@ -68,38 +104,18 @@ public class OtpServiceImpl implements OtpService {
             }  else {
                 otp = OTPGenerator.generateOTP(6);
             }
-            //TODO save in db
             return otp;
         } catch (Exception e) {
-            log.error("Cannot generate OTP for msisdn [{}]", identifier, e);
+            log.error("Cannot generate OTP for identifier [{}]", identifier, e);
         }
         return null;
     }
 
-
-
-    @Override
-    public boolean verifyOTP(String identifier, String randomOtp,boolean removeFromCache) {
-        Otp otp = otpRepository.findOtpByIdentifier(identifier);
-        boolean isVerified = otp.getValue().equals(randomOtp);
-        if(isVerified && removeFromCache){
-            otpRepository.delete(otp);
+    public boolean validateIdentifier(String mobileNumber) {
+        // ADD A LOG FOR IP AND IDENTIFIER
+        if (StringUtils.isBlank(mobileNumber) || mobileNumber.length() > 10) {
+            throw new RequestValidationException("Please Enter a valid mobile number");
         }
-        return isVerified;
-    }
-
-    @Override
-    public String getOTP(String identifier) {
-        return null;
-    }
-
-    @Override
-    public boolean generateAndSendOtp(String identifier) {
-        String otp = generateOtp(identifier);
-        if(!demoMobileNos.contains(identifier) && !identifier.startsWith("2222")){
-            //smsService.send(identifier, otp);
-        }
-
         return true;
     }
 }
